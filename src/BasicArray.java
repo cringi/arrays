@@ -5,17 +5,29 @@
  *
  */
 
+public class BasicArray {
+	public static void main(String[] args) {
+		//------------------------------------------------------------
+		// Creates an array, fills it with various integer values,
+		// modifies one value, then prints them out
+		//------------------------------------------------------------
+
+		final int LIMIT = 15;
+
+		// Declaring my array
+		int[] list = new int[LIMIT];
 
 
-public class BasicArray
-{
-	public static void main(String[] args)
-	{
+		// Initialize the array values
+		for (int index = 0;index < LIMIT;index++) {
+			list[index] = index * 10;
+		}
 
-	//------------------------------------------------------------
-	// Creates an array, fills it with various integer values,
-	// modifies one value, then prints them out
-	//------------------------------------------------------------
+		list[5] = 999;
 
+		// Print the array values
+		for (int index = 0;index < LIMIT;index++) {
+			System.out.println(list[index]);
+		}
 	}
 }
